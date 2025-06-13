@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNOU BCA C Language Study Guide</title>
+   <link rel="stylesheet" href="./monkey.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 IGNOU BCA C Language</h1>
+            <p>Interactive Study Guide - 16 Mark Questions</p>
+        </div>
+
+        <div class="controls">
+            <button class="filter-btn active" onclick="filterQuestions('all')">All Questions</button>
+            <button class="filter-btn" onclick="filterQuestions('high')">High Priority</button>
+            <button class="filter-btn" onclick="filterQuestions('medium')">Medium Priority</button>
+            <button class="filter-btn" onclick="filterQuestions('additional')">Additional</button>
+            <button class="filter-btn" onclick="toggleCompleted()">Show Completed</button>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalQuestions">21</div>
+                    <div class="stat-label">Total Questions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="completedCount">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="remainingCount">21</div>
+                    <div class="stat-label">Remaining</div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">💡 Tips to Score Maximum Marks</div>
+                <div class="tip-item"><strong>📝 Structure Your Answer:</strong> Start with definition, explain concepts, provide examples, and conclude with applications</div>
+                <div class="tip-item"><strong>💻 Write Complete Programs:</strong> Include headers, proper variable declarations, and add comments for clarity</div>
+                <div class="tip-item"><strong>📊 Draw Diagrams:</strong> For pointers and arrays, always draw memory representation diagrams</div>
+                <div class="tip-item"><strong>⚡ Practice Syntax:</strong> Ensure perfect C syntax - even small errors can cost marks</div>
+                <div class="tip-item"><strong>🔍 Explain Step-by-Step:</strong> Break down complex concepts into smaller, manageable parts</div>
+                <div class="tip-item"><strong>📚 Use Real Examples:</strong> Provide practical applications rather than just theoretical explanations</div>
+            </div>
+
+            <div id="questionContainer">
+                <!-- Questions will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./dj.js">
+       
+    </script>
+</body>
+</html>
